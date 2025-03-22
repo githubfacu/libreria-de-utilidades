@@ -1,7 +1,3 @@
-// [] true
-// {} true
-// {prop: true} false
-// value:string, number, etc return true
 export const isEmpty = (value: unknown): boolean => {
     const isCountable = value instanceof Object
     if(!isCountable) return true
