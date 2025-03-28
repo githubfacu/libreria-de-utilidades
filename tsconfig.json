@@ -5,6 +5,8 @@
     "module": "ESNext",
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "skipLibCheck": true,
+    "types": ["vitest/globals"],
+    "baseUrl": ".",
     "paths": {
       "@src/*": ["./src/*"],
       "@types/*": ["./src/types/*"]
