@@ -1,12 +1,13 @@
 {
-  "name": "lvlup-utils",
+  "name": "lvlup-utils-lib",
   "version": "0.0.1",
   "type": "module",
-  "typings": "./dist/index.d.ts",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/lvlup-utils.js",
-      "require": "./dist/lvlup-utils.umd.cjs"
+      "import": "./dist/lvlup-utils-lib.js",
+      "require": "./dist/lvlup-utils-lib.umd.cjs",
+      "types": "./dist/index.d.ts"
     }
   },
   "files": [

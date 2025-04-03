@@ -7,7 +7,7 @@ export default defineConfig({
     build: {
         lib: {
             entry: resolve(__dirname, 'src/index.ts'),
-            name: 'utils-lib'
+            name: 'lvlup-utils-lib'
         }
     },
     resolve:{
@@ -17,5 +17,9 @@ export default defineConfig({
             // '@utils': resolve(__dirname, '/src/utils')
         }
     },
-    plugins: [dts({outDir: 'dist', exclude: ['**/*.test.ts', '/test']}), viteConfigPaths()]
+    plugins: [dts({
+        outDir: 'dist', 
+        exclude: ['**/*.test.ts', '/test'],
+        insertTypesEntry: true
+    }), viteConfigPaths()]
 })
